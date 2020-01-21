@@ -49,7 +49,8 @@ isPalindrome('human');
 // Given a string with the animal name, that Lawrence encounters, output small if the animal is an alligator (case insensitive) otherwise return wide.
 
 const isAlligator = (animal) => {
-    if (animal == 'alligator') {
+    const lowercaseAnimal = animal.toLowerCase();
+    if (lowercaseAnimal === 'alligator') {
         return 'small';
     } else {
         return 'wide';
@@ -57,4 +58,4 @@ const isAlligator = (animal) => {
 };
 
 console.log(isAlligator('pig'));
-console.log(isAlligator('alligator'));
+console.log(isAlligator('Alligator'));
