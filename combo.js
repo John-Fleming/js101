@@ -33,14 +33,15 @@ console.log(oppositeNumber(27));
 // Console true if the given string is a palindrome. Otherwise, console false.
 
 const isPalindrome = (str) => {
-    if (str.split('').reverse().join('') === str) {
+    const lowercaseStr = str.toLowerCase();
+    if (lowercaseStr.split('').reverse().join('') === lowercaseStr) {
         console.log('true');
     } else {
         console.log('false');
     }
 };
 
-isPalindrome('tacocat');
+isPalindrome('tAcoCat');
 isPalindrome('human');
 
 // Challenge #4
